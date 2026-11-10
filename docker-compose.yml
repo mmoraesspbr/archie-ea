@@ -131,8 +131,7 @@ services:
       #                the Caddy droplet (10.106.0.2) now proxies to. If the
       #                droplet's private IP ever changes, update both this and
       #                the proxy's Caddyfile.
-      - '127.0.0.1:5000:5000'
-      - '10.106.0.6:5000:5000'
+    - '5000:5000'
     volumes:
       - './:/app'
     environment:
